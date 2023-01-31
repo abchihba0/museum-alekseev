@@ -109,9 +109,10 @@ background-size: cover;
 .intro {
     width: 100%;
     height: 100vh;
-    background: url(../jpg/expositions/экспозиции\ вар\ 3.jpg) bottom;
+    background: url(../jpg/expositions/предварительный\ итог.jpg);
+    background-position: center;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size:contain;
     display: flex;
     flex-direction: column;
     justify-content: center;
