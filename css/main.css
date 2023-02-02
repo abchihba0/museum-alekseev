@@ -658,19 +658,9 @@ footer {
       background-color: #3b3838;
       transition: all .1s linear;
   }
-  .left_menu, .right_menu {
-    height: 100%;
-    box-sizing: border-box;
-    width: 42%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    border-bottom: 0;
-    border-top: 0;
-}
+  .left_menu a, .right_menu a{
+    display: none;
+  }
   #checkbox_menu + label .touch li {
       opacity: 1;
       visibility: visible;
@@ -702,4 +692,17 @@ footer {
       align-self: center;
       align-content: center;
   }
+  .left_menu, .right_menu {
+    height: 100%;
+    box-sizing: border-box;
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    border-bottom: 0;
+    border-top: 0;
+}
 }
