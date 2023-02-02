@@ -164,7 +164,7 @@ li a img {
 }
 
 /* элементы менюшки не видно на компе */
-.icon_menu, #checkbox_menu {
+.icon_menu, #checkbox_menu, .logo_mobule {
     display: none;
 } 
 
@@ -650,16 +650,16 @@ footer {
   .icon_menu {
       clear: both;
       display: block;
-      text-align: center;
+      /* text-align: center; */
       font-size: 14px;
       line-height: 40px;
-      width: 100%;
+      /* width: 100%; */
       color: #fff;
       background-color: #3b3838;
       transition: all .1s linear;
   }
   .left_menu a, .right_menu a{
-    display: none;
+    /* display: none; */
   }
   #checkbox_menu + label .touch li {
       opacity: 1;
@@ -705,4 +705,29 @@ footer {
     border-bottom: 0;
     border-top: 0;
 }
+
+.logo a{
+  display: none;
+}
+.logo_mobule {
+  
+  display: inline-block;
+}
+.logo_mobule img {
+height: 5vh;
+width: auto;
+}
+
+.header_mob {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+
 }
