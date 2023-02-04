@@ -377,9 +377,10 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   padding-top: 8vh;
   padding-bottom: 8vh;
+
 }
 .sector {
   align-items: center;
@@ -682,6 +683,27 @@ flex-direction: row;
     display: none;
   }
 
+  .logo_mobule {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .logo_mobule img {
+    height: 50px;
+    width: auto;
+  }
+
+
+  .header_mob {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .left_menu a, .right_menu a{
+    display: none; 
+  }
   
   .icon_menu {
     display: flex;
@@ -727,20 +749,19 @@ flex-direction: row;
     transform: rotate(-135deg);
   } 
 
-
-  .left_menu a, .right_menu a{
-    /* display: none; */
-  }
+.icon_menu span::after .left_menu a,
+ .icon_menu span::after .right_menu a{
+  display: block; 
+}
+  
   #checkbox_menu + label .touch li {
       opacity: 1;
       visibility: visible;
       transition: all .7s linear;
 
   }
-  #checkbox_menu + label .touch {
-      height: 350px;
-      
-  }
+ 
+  
   .navigation {
       display: flex;
       flex-direction: column;
@@ -780,22 +801,6 @@ flex-direction: row;
 
 .logo a{
   display: none;
-}
-.logo_mobule {
-  
-  display: inline-block;
-}
-.logo_mobule img {
-height: 5vh;
-width: auto;
-}
-
-.header_mob {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 }
 
 
