@@ -99,8 +99,8 @@ header nav {
     color: #fff;
     text-decoration: none;
     align-self: center;
-     font-size: 1.3em;
-    /* font-size: 3vh; */
+     /* font-size: 1.3em; */
+     font-size: 3vh;
 
     transition: color .2s linear;
 }
@@ -196,7 +196,7 @@ li a img {
  .heading_right {
     /* font-family: 'Montserrat', sans-serif; */
     text-align: end;
-    font-size: 6vh;
+    font-size: 2.3em;
    padding-top: 4vh;
    color: #3b3838;
 }
@@ -511,7 +511,8 @@ img {
   color: #bbb;
 }
 .news_title {
-  font-size: 2vh;
+
+  font-size: 0.7666666em;
   color: #3b3838;
 }
 .news_text {
@@ -668,22 +669,65 @@ flex-direction: row;
   width: 100%;
 }
 
+.zaebal_icon_menu {
+  display: none;
+}
+
 
 
 
 
 @media screen and (max-width:765px) {
-  .icon_menu {
-      clear: both;
-      display: block;
-      /* text-align: center; */
-      font-size: 14px;
-      line-height: 40px;
-      /* width: 100%; */
-      color: #fff;
-      background-color: #3b3838;
-      transition: all .1s linear;
+  .zaebal_icon_menu {
+    display: none;
   }
+
+  
+  .icon_menu {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 50px;
+    height: 50px;
+    /* background-color: #dd03b9; */
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .icon_menu span::before,
+  .icon_menu span::after,
+  .icon_menu span {
+    background-color: #ffffff;
+    width: 24px;
+    height: 3px;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+  .icon_menu span::before,
+  .icon_menu span::after {
+    content: "";
+    position: relative;
+    display: inline-block;
+  }
+  .icon_menu span::before {
+    top: -20px;
+  }
+  .icon_menu span::after {
+    top: -23px;
+  }
+  .zaebal_icon_menu:checked + .icon_menu span {
+    background-color: transparent;
+  }
+  .zaebal_icon_menu:checked + .icon_menu span::before {
+    top: -13px;
+    transform: rotate(135deg);
+  }
+  .zaebal_icon_menu:checked + .icon_menu span::after {
+    top: -32px;
+    transform: rotate(-135deg);
+  } 
+
+
   .left_menu a, .right_menu a{
     /* display: none; */
   }
@@ -727,9 +771,11 @@ flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding-top: 1vh;
+
     padding-bottom: 1vh;
     border-bottom: none;
     border-top: none;
+
 }
 
 .logo a{
