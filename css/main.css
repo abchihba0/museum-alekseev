@@ -655,19 +655,7 @@ footer {
   .zaebal_icon_menu {
     display: none;
   }
-  
-  /* .icon_menu {
-      clear: both;
-      display: block;
-      /* text-align: center; 
-      line-height: 40px;
-      /* width: 100%; 
-      color: #fff;
-      background-color: #3b3838;
-      border-radius: 2px;
-      transition: 0.3s;
-      font-size: 25px; 
-  }*/
+
   
   .icon_menu {
     display: flex;
