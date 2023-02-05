@@ -164,7 +164,7 @@ li a img {
 }
 
 /* элементы менюшки не видно на компе */
-.icon_menu, #checkbox_menu, .logo_mobile {
+.icon_menu, #checkbox_menu, .logo_mobile, .navigation_mobile {
     display: none;
 } 
 
@@ -683,6 +683,12 @@ flex-direction: row;
   .logo a{
     display: none;
   }
+  .left_menu, .right_menu {
+    display: none;
+  }
+  .navigation {
+    display: none;
+  }
   .logo_mobile {  
     display: inline-block;
     padding-top: 5px;
@@ -745,12 +751,23 @@ flex-direction: row;
     transform: rotate(-135deg);
   } 
 
-  .navigation {
-    display: none;
-  }
 
-.zaebal_icon_menu:checked ~ .navigation {
+  
+.zaebal_icon_menu:checked ~ .navigation_mobile
+  {
   display: block;
+}
+
+.navigation_mobile li{
+  width: 100%;
+  text-align: center;
+  list-style-type: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.navigation_mobile li a {
+  color: #fff;
+  font-size: 1.5em;
 }
 
 
