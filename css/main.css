@@ -164,7 +164,7 @@ li a img {
 }
 
 /* элементы менюшки не видно на компе */
-.icon_menu, #checkbox_menu, .logo_mobule {
+.icon_menu, #checkbox_menu, .logo_mobile, .navigation_mobile {
     display: none;
 } 
 
@@ -659,6 +659,9 @@ flex-direction: row;
   text-align: end;
 }
 
+.footer_roots {
+  text-align: center;
+}
 
 .footer_end {
   border-top: .1vh solid #fff;
@@ -679,30 +682,36 @@ flex-direction: row;
 
 
 @media screen and (max-width:765px) {
-  .zaebal_icon_menu {
+
+
+
+  .logo a{
     display: none;
   }
 
-  .logo_mobule {
-    display: block;
+ 
+  
+
+  .navigation {
+    display: none;
+  }
+  .logo_mobile {  
+    display: inline-block;
     padding-top: 5px;
     padding-bottom: 5px;
   }
-  .logo_mobule img {
-    height: 50px;
-    width: auto;
+  .logo_mobile img {
+  height: 50px;
+  width: auto;
   }
-
-
-  .header_mob {
+  
+  .header_mobile {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-  }
-  .left_menu a, .right_menu a{
-    display: none; 
+
   }
   
   .icon_menu {
@@ -737,71 +746,40 @@ flex-direction: row;
   .icon_menu span::after {
     top: -23px;
   }
-  .zaebal_icon_menu:checked + .icon_menu span {
+  .zaebal_icon_menu:checked ~ .header_mobile .icon_menu span {
     background-color: transparent;
   }
-  .zaebal_icon_menu:checked + .icon_menu span::before {
+  .zaebal_icon_menu:checked ~ .header_mobile .icon_menu span::before {
     top: -13px;
     transform: rotate(135deg);
   }
-  .zaebal_icon_menu:checked + .icon_menu span::after {
+  .zaebal_icon_menu:checked ~ .header_mobile .icon_menu span::after {
     top: -32px;
     transform: rotate(-135deg);
   } 
 
-.icon_menu span::after .left_menu a,
- .icon_menu span::after .right_menu a{
-  display: block; 
-}
+
   
-  #checkbox_menu + label .touch li {
-      opacity: 1;
-      visibility: visible;
-      transition: all .7s linear;
+.zaebal_icon_menu:checked ~ .navigation_mobile
+  {
+  display: block;
+}
 
-  }
- 
-  
-  .navigation {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      height: 0;
-      transition: height .3s linear;
-  }
-  .navigation li {
-      display: flex;
-      align-self: center;
-      width: 95%;
-      opacity: 0;
-      visibility: hidden;
-  }
-  .navigation li a {
-      width: 95%;
-      text-align: center;
-      align-self: center;
-      align-content: center;
-  }
-  .left_menu, .right_menu {
-    height: 100%;
-    box-sizing: border-box;
-    width: 42%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 1vh;
-
-    padding-bottom: 1vh;
-    border-bottom: none;
-    border-top: none;
+.navigation_mobile li{
+  width: 100%;
+  text-align: center;
+  list-style-type: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.navigation_mobile li a {
+  color: #fff;
+  font-size: 1.5em;
 
 }
 
-.logo a{
-  display: none;
-}
+
+
 
 
 
