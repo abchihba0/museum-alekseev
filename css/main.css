@@ -377,9 +377,10 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   padding-top: 8vh;
   padding-bottom: 8vh;
+
 }
 .sector {
   align-items: center;
@@ -683,12 +684,14 @@ flex-direction: row;
 @media screen and (max-width:765px) {
 
 
+
   .logo a{
     display: none;
   }
-  .left_menu, .right_menu {
-    display: none;
-  }
+
+ 
+  
+
   .navigation {
     display: none;
   }
@@ -708,6 +711,7 @@ flex-direction: row;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
   }
   
   .icon_menu {
@@ -771,6 +775,7 @@ flex-direction: row;
 .navigation_mobile li a {
   color: #fff;
   font-size: 1.5em;
+
 }
 
 
