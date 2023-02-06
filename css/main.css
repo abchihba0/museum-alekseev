@@ -658,6 +658,9 @@ flex-direction: row;
   text-align: end;
 }
 
+.footer_roots {
+  text-align: center;
+}
 
 .footer_end {
   border-top: .1vh solid #fff;
