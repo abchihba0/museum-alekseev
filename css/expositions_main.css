@@ -1,130 +1,130 @@
 * {
-    margin: 0;
-    padding: 0;
-    /* font-family: 'Playfair Display', serif; */
-    font-family: 'Montserrat', sans-serif;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Playfair Display', serif; */
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
 }
 body, html {
-    overflow-x: hidden;
-    
+  overflow-x: hidden;
+  
 }
 body a {
-  text-decoration: none;
+text-decoration: none;
 }
+
+
+
+/* контейнер */
+
+
 .container {
-    margin: 0 auto;
-    width: 90vw;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  width: 90%;
 
 }
+
 
 /* навигационная панель */
 header {
-    position: absolute;
-    top: o;
-    left: 0;
-    right: 0;
-    z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 header nav {
-    text-align: center;
-    background-color: #3b3838;  
+  text-align: center;
+  background-color: #3b3838;
+    
 }
 
 .navigation{
-    /* margin: auto; */
-    text-align: center;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
-    /* border-bottom: 5px solid red; */
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
 
 }
 .left_menu, .right_menu {
-    height: 100%;
-    box-sizing: border-box;
-    width: 42%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    border-bottom: 0.3vh solid #fff;
-    border-top: 0.3vh solid #fff;
+  height: 100%;
+  box-sizing: border-box;
+  width: 42%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #fff;
+  border-top: 2px solid #fff;
 }
 
-        /* ссылки навигации */
+      /* ссылки навигации */
 .navigation li a {
-    color: #fff;
-    text-decoration: none;
-    align-self: center;
-     font-size: 1.3em;
-    /* font-size: 3vh; */
-
-    transition: color .2s linear;
+  color: #fff;
+  text-decoration: none;
+  align-self: center;
+  font-size: 1.3em;
+  transition: color .2s linear;
 }
-        /* наведенные ссылки нава */
+      /* наведенные ссылки нава */
 
-        .navigation li a:hover {
-            color: #cf3339;
-        }
+.navigation li a:hover {
+color: #cf3339;
+}
 
 
-        /* логотип в наве */
+      /* логотип в наве */
 
 li a img {
-    display: block;
-    align-items: center;
-    height: 9.2vh;
-    width: auto;
-    margin-top: .4vh;
-    margin-bottom: .4vh;
-    
+  display: block;
+  align-items: center;
+  height: 85px;
+  width: auto;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  
 }
+
 /* элементы менюшки не видно на компе */
-.icon_menu, #checkbox_menu {
-    display: none;
+.icon_menu, #checkbox_menu, .logo_mobile, .navigation_mobile, .zaebal_icon_menu {
+  display: none;
 } 
 
-
-
-/* .main_info {
-    width: 100vw;
-} */
-
-
-
-/* header {
-    background-image: url(../jpg/expositions/экспозиции\ начало.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-} */
 
 
 
 .intro {
     width: 100%;
     height: 100vh;
-    background: url(../jpg/expositions/экспозиции\ вар7.jpg);
-    background-position: center;
+    background: url(../jpg/expositions/экспозиции\ вар12.jpg);
+    background-position: center left 30%;
     background-repeat: no-repeat;
     background-size:cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
 
+.intro_text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
 
-.intro_info {
-    margin: 0 auto;
-    text-align: center;
-    color: #3b3838;
-    font-size: 10vh;
+  text-align: center;
+  color: #fff;
+  font-size: 1.3em;
+}  
+.title {
+  margin-bottom: 5px;
+  font-weight: 200;
+  font-size: 100px;
 }
+
+
+
 
 
 
@@ -182,7 +182,6 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    /* align-items: center; */
   }
   
   .footer_nav_left, .footer_nav_right {
@@ -234,4 +233,119 @@ footer {
     align-items: center;
     height: 10%;
     width: 100%;
+  }
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width:860px) {
+
+
+
+    .logo a{
+      display: none;
+    }
+  
+   
+    
+  
+    .navigation {
+      display: none;
+    }
+    .logo_mobile {  
+      display: inline-block;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    .logo_mobile img {
+    height: 50px;
+    width: auto;
+    }
+    
+    .header_mobile {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  
+    }
+    
+    .icon_menu {
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      width: 50px;
+      height: 50px;
+      /* background-color: #dd03b9; */
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    .icon_menu span::before,
+    .icon_menu span::after,
+    .icon_menu span {
+      background-color: #ffffff;
+      width: 24px;
+      height: 3px;
+      border-radius: 2px;
+      transition: 0.3s;
+    }
+    .icon_menu span::before,
+    .icon_menu span::after {
+      content: "";
+      position: relative;
+      display: inline-block;
+    }
+    .icon_menu span::before {
+      top: -20px;
+    }
+    .icon_menu span::after {
+      top: -23px;
+    }
+    .zaebal_icon_menu:checked ~ .header_mobile .icon_menu span {
+      background-color: transparent;
+    }
+    .zaebal_icon_menu:checked ~ .header_mobile .icon_menu span::before {
+      top: -13px;
+      transform: rotate(135deg);
+    }
+    .zaebal_icon_menu:checked ~ .header_mobile .icon_menu span::after {
+      top: -32px;
+      transform: rotate(-135deg);
+    } 
+  
+
+    
+  .zaebal_icon_menu:checked ~ .navigation_mobile
+    {
+    display: block;
+  }
+  
+
+  .navigation_mobile li{
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .navigation_mobile li a {
+    color: #fff;
+    font-size: 1.5em;
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
   }

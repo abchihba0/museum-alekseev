@@ -30,7 +30,7 @@ body a {
 
 header {
     height: 100vh;
-    background-image: url(../jpg/main/meteor.jpg);
+    background-image: url(../jpg/main/meteor1.jpg);
     background-repeat: no-repeat;
     /* картинка в полный экран, пока что закомментировано,
     в случае чего расскомментировать или удалить */
@@ -681,7 +681,7 @@ flex-direction: row;
 
 
 
-@media screen and (max-width:765px) {
+@media screen and (max-width:865px) {
 
 
 
