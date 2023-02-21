@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* font-family: 'Playfair Display', serif; */
+
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
 }
@@ -91,9 +91,10 @@ li a img {
 }
 
 /* элементы менюшки не видно на компе */
-.icon_menu, #checkbox_menu, .logo_mobile, .navigation_mobile, .zaebal_icon_menu {
+.icon_menu, #checkbox_menu, .logo_mobile,  .zaebal_icon_menu {
   display: none;
 } 
+
 
 
 
@@ -149,99 +150,223 @@ li a img {
 
 
 
+
+
+.content {
+  /* height: 100vh; */
+  align-items: center;
+  font-size: 1.3em;
+
+}
+
+.content p {
+  margin-top: 50px; 
+}
+.content img {
+  float: right;
+  height: 500px;  
+  width: auto;
+  padding-left: 15px;
+}
+
+
+.museum_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: 8vh;
+  padding-bottom: 8vh;
+
+}
+.sector {
+  align-items: center;
+  overflow: hidden;
+}
+.sector p  {
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  font-size: 2vh;
+}
+.name_of_vst p{
+  font-size: 2.5vh;
+  padding-top: .5vh;
+}
+.sector img {
+  display: block;
+  height: 60vh;
+  width: auto;
+  transition: 1s;
+} 
+.text_vzux {
+  vertical-align: middle;
+  font-size: 2vh;
+  position:absolute; 
+  visibility:hidden;
+  background:rgba(0, 0, 0, 0.4392156862745098);
+  color: #fff;
+  width: 100%;
+  height: 70vh;
+  top: 60vh;
+}
+.text_vzux p {
+  padding-top: 21vh;
+  text-align: center;
+
+}
+.sector:hover .text_vzux{
+  visibility:visible;
+  transition:1s;
+  -webkit-transition:1s;
+  transform:translatey(-60vh);
+  -webkit-transform:translatey(-60vh);
+} 
+.sector:hover{
+  filter:sepia(50%);
+  -webkit-filter:sepia(60%);
+  transition:1s;
+  -webkit-transition:1s;
+}
+
+
+
+.sector:hover img{
+  z-index: 1;
+  filter: blur(5px);
+  transform: scale(1.2);
+  /* filter:sepia(50%);
+  -webkit-filter:sepia(60%); */
+  transition:1s;
+  /* -webkit-transition:1s; */
+} 
+
+
+/* футер */
+
+
 footer {
-    color: #fff;
-    padding-top: 5vw;
-    padding-bottom: 2vh;
-    background-color: #3b3838;
-  }
-  
-  .prv {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    height: 10%;
-    width: 100%;
-  }
-  .logo_footer img {
-    height: 15vh;
-  } 
-  .adres {
-    margin-right: 8vw;
-  }
-  .adres_link a {
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  .footer_nav {
-    color: #fff;
-    height: 15vh;
-    margin-top: 5vw;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-  }
-  
-  .footer_nav_left, .footer_nav_right {
-    width: 20vw;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-  }
-  .footer_contacts {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .footer_contacts a {
-    color: #fff;
-  }
-  .footer_nav li {
-    font-size: 1.1em;
-    list-style-type: none;
-    padding-top: 5%;
-  }
-  
-  
-  
-  .footer_nav_left a, .footer_nav_right a {
-    color: #fff;
-    text-decoration: none;
-    align-self: center;
-  }
-  
-  
-  .footer_contacts {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-    list-style-type: none;
-  }
-  
-  .footer_end {
-    border-top: .1vh solid #fff;
-    margin-top: 4vw;
-    padding-top: .5vh;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    height: 10%;
-    width: 100%;
-  }
+  color: #fff;
+  padding-top: 3vh;
+  padding-bottom: 2vh;
+  background-color: #3b3838;
+}
+
+.prv {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.prv a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.prv .logo_footer {
+  width: 50%;
+}
+.prv .adres_info {
+  width: 50%;
+}
+
+.logo_footer {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo_footer div {
+  font-size: 1.1em;
+  width: 100%;
+  text-align: center; 
+}
+
+.logo_footer span {
+  border-bottom: 2px solid #fff;
+}
+
+.logo_footer img {
+  height: 100px;
+}
+
+.adres  {
+  font-size: 1.1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ }
+
+ .adres_info h2 {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  border-bottom: 2px solid #fff ;
+}
+
+.footer_nav {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 15px;
+}
 
 
 
+.footer_nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer_nav_left, .footer_nav_right {
+  width: 50%;
+}
+
+.footer_item, .footer_item {
+  font-size: 1.1em;
+  padding-bottom: 25px;
+} 
+
+.footer_nav_left {
+display: flex;
+flex-direction: row;
+}
+.footer_nav_left div {
+  width: 50%;
+}
+
+.footer_nav_right {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact_information {
+  text-align: end;
+}
+
+.footer_roots {
+  text-align: center;
+}
+
+.footer_end {
+  border-top: .1vh solid #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+}
 
 
-
-
-
+.navigation_mobile {
+  visibility: hidden;
+  height: 0;
+  transition: all 1.5s linear;
+}
 
   @media screen and (max-width:860px) {
 
@@ -257,10 +382,10 @@ footer {
     .navigation {
       display: none;
     }
+    
     .logo_mobile {  
       display: inline-block;
       padding-top: 5px;
-      padding-bottom: 5px;
     }
     .logo_mobile img {
     height: 50px;
@@ -268,6 +393,10 @@ footer {
     }
     
     .header_mobile {
+      background-color: #3b3838;
+    }
+
+    .main_header_mobile {
       width: 100%;
       display: flex;
       flex-direction: row;
@@ -320,32 +449,50 @@ footer {
       transform: rotate(-135deg);
     } 
   
-
+    .navigation_mobile li{
+      width: 100%;
+      text-align: center;
+      list-style-type: none;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      
+    }
+    .navigation_mobile li a {
+      color: #fff;
+      font-size: 0px;
+      transition: font-size 1.4s linear;
+    }
     
-  .zaebal_icon_menu:checked ~ .navigation_mobile
+  .zaebal_icon_menu:checked ~ .header_mobile .navigation_mobile
     {
-    display: block;
+    visibility: visible;
+    height: calc(6 * (29px + 20px));
   }
+  .zaebal_icon_menu:checked ~ .header_mobile .navigation_mobile li a
+    {
+    font-size: 24px;
+  }
+
+ 
+  
+  
+  /* футер */
+  
+  
+  .prv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .logo_footer {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   
 
-  .navigation_mobile li{
-    width: 100%;
-    text-align: center;
-    list-style-type: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .navigation_mobile li a {
-    color: #fff;
-    font-size: 1.5em;
-  
-  }
-  
-  
-  
-  
-  
-  
-  
-  
+
+
   }
