@@ -91,7 +91,7 @@ li a img {
 }
 
 /* элементы менюшки не видно на компе */
-.icon_menu, #checkbox_menu, .logo_mobile,  .zaebal_icon_menu {
+.icon_menu, #checkbox_menu, .logo_mobile,  .zaebal_icon_menu, .main_header_mobile {
   display: none;
 } 
 
@@ -365,7 +365,7 @@ flex-direction: row;
 .navigation_mobile {
   visibility: hidden;
   height: 0;
-  transition: all 1.5s linear;
+  transition: all .5s linear;
 }
 
   @media screen and (max-width:860px) {
@@ -376,9 +376,12 @@ flex-direction: row;
       display: none;
     }
   
-   
+   .main_header_mobile svg {
+    display: block;
+    height: 40px;
+    width: auto;
+   }
     
-  
     .navigation {
       display: none;
     }
@@ -387,6 +390,8 @@ flex-direction: row;
       display: inline-block;
       padding-top: 5px;
     }
+
+
     .logo_mobile img {
     height: 50px;
     width: auto;
@@ -396,12 +401,20 @@ flex-direction: row;
       background-color: #3b3838;
     }
 
+    .main_header_mobile a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      font-size: 1.3em;
+    }
+
     .main_header_mobile {
       width: 100%;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      color: #fff;
   
     }
     
@@ -460,7 +473,7 @@ flex-direction: row;
     .navigation_mobile li a {
       color: #fff;
       font-size: 0px;
-      transition: font-size 1.4s linear;
+      transition: font-size .5s linear;
     }
     
   .zaebal_icon_menu:checked ~ .header_mobile .navigation_mobile
@@ -484,11 +497,15 @@ flex-direction: row;
     flex-direction: column;
     justify-content: space-between;
   }
-  .logo_footer {
-    width: 90vw;
+  .prv .logo_footer {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+  }
+  .prv .logo_footer .footer_name {
+    width: 50%;
   }
 
   
