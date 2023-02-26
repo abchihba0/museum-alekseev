@@ -265,31 +265,26 @@ footer {
   color: #fff;
 }
 
-.prv .logo_footer {
+.prv .logo_footer, .prv .adres_info{
   width: 50%;
 }
-.prv .adres_info {
-  width: 50%;
-}
+
 
 .logo_footer {
   align-items: center;
   display: flex;
   flex-direction: row;
 }
-
-.logo_footer div {
-  font-size: 1.1em;
+.footer_name {
   width: 100%;
+  font-size: 1.1em;
   text-align: center; 
 }
-
-.logo_footer span {
+.footer_name span {
   border-bottom: 2px solid #fff;
 }
-
 .logo_footer img {
-  height: 100px;
+  height: 100px; 
 }
 
 .adres  {
@@ -347,18 +342,19 @@ flex-direction: row;
   text-align: end;
 }
 
-.footer_roots {
+.footer_roots_name {
   text-align: center;
 }
 
 .footer_end {
-  border-top: .1vh solid #fff;
+  border-top: .5px solid #fff;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
   height: 10%;
   width: 100%;
+  font-size: 1em;
 }
 
 
@@ -491,7 +487,6 @@ flex-direction: row;
   
   /* футер */
   
-  
   .prv {
     display: flex;
     flex-direction: column;
@@ -503,13 +498,25 @@ flex-direction: row;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    text-align: right;
   }
   .prv .logo_footer .footer_name {
-    width: 50%;
+    display: inline-block;
+  }
+  .footer_name {
+    text-align: end;
   }
 
-  
+  .logo_footer img {
+    height: 80px;
+    width: auto;
+  }
 
+  .adres_info {
+    width: 100%;
+  }
+  
+  
 
 
   }
